@@ -2,17 +2,15 @@ import random
 import time
 cs=0
 ps=0
-list = [1,2]
+list = ['1','2']
 #Take main input
 while True:
-    a=int(input("Enter a number\n"))
+    a=input("Enter a number\n")
     #If the input goes wrong then demand a correct one in contini...
-    while True:
-        if a not in list:
-            input('Invalid Entry !')
-            input("Enter a number")
-        else:
-            break
+    while a not in list:
+        print('Invalid Entry !')
+        a = input("Enter a number\n")
+    a=int(a)
     #Real game begins and the score start calculated
     if a == random.randint(1,2):
         cs=cs+1

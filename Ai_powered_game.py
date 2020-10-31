@@ -5,7 +5,7 @@ ps=0
 list = [1,2]
 #Take main input
 while True:
-    a=input("Enter a number\n")
+    a=int(input("Enter a number\n"))
     #If the input goes wrong then demand a correct one in contini...
     while True:
         if a not in list:
